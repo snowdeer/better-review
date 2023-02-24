@@ -34,7 +34,8 @@ module.exports = (env: any) => {
         },
         {
           test: /\.(jpe?g|png|gif|eot|ttf|svg|woff|woff2|md)$/i,
-          loader: "file-loader",
+          type: "asset/resource",
+          dependency: { not: ["url"] },
         },
         {
           test: /\.tsx?$/,

@@ -40,3 +40,11 @@ Theme는 GitHub의 `Settings` > `Appearance`에서 선택한 테마를 따라갑
 ### 더 많은 이모지 추천
 
 ![image](docs/emoji.gif)
+
+### Command Palette
+
+![image](docs/command-palette.gif)
+
+### Find & Replace
+
+![image](docs/find-and-replace.gif)

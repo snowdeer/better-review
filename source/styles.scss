@@ -1,0 +1,15 @@
+.editor-wrapper {
+  transition: backdrop-filter 1s ease-out;
+
+  display: flex;
+  box-sizing: border-box;
+  padding-bottom: 10px;
+
+  backdrop-filter: 0;
+
+  .monaco-container {
+    min-width: 300px;
+    min-height: 200px;
+    flex: 1;
+  }
+}

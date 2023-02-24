@@ -1,11 +1,35 @@
 {
   "manifest_version": 3,
   "name": "Better Review",
-  "version": "0.0.1",
+  "version": "0.1",
   "description": "Better Review is a chrome extension for GitHub Editor.",
-  "author": "snowdeer",
-  "action": {
-    "default_popup": "index.html",
-    "default_title": "Better Review"
-  }
+  "icons": {
+    "128": "icon.png"
+  },
+
+  "host_permissions": [
+    "https://github.ecodesamsung.com/*",
+    "https://github.sec.samsung.net/*",
+    "https://github.com/*",
+    "https://gist.github.com/*"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["dist/*"],
+      "matches": ["http://*/*", "https://*/*"]
+    }
+  ],
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://github.ecodesamsung.com/*",
+        "https://github.sec.samsung.net/*",
+        "https://github.com/*",
+        "https://gist.github.com/*"
+      ],
+      "js": ["/dist/content.js"],
+      "run_at": "document_end"
+    }
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Better Review",
-  "version": "0.2",
+  "version": "0.3",
   "description": "Better Review is a chrome extension for GitHub Editor.",
   "icons": {
     "128": "icon.png"
